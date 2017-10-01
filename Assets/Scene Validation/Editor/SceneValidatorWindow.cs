@@ -83,7 +83,7 @@ namespace SceneValidation
 				scrollState.scrollPosition = scrollView.scrollPosition;
 				foreach (var validationInfo in sceneValidatorState.GetValidationInfosSorted())
 				{
-					
+
 					if (SceneValidatorDrawing.ValidationItem(validationInfo.Result, validationInfo.Description))
 					{
 						var validatorInstance = Activator.CreateInstance(sceneValidatorState.ValidatorClass);
@@ -97,6 +97,7 @@ namespace SceneValidation
 		private void OnSceneOpened(Scene scene, OpenSceneMode mode)
 		{
 			SetupSceneValidator();
+			Repaint();
 		}
 
 		private void OnAssemblyReloaded()
