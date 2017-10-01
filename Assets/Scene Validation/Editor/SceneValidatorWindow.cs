@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Linq;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEditor;
 using UnityEditor.SceneManagement;
-using UnityEngine.UI;
-using UnityEngine.Events;
-using Object = UnityEngine.Object;
-using Random = UnityEngine.Random;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace SceneValidation
