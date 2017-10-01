@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-[SceneValidator("Assets/Scene Validation/Test Scene.unity")]
+[SceneValidator("Assets/Scene Validation/Test Scenes/Test Scene.unity")]
 public class TestSceneValidator
 {
 	[ValidationMethod("Scene must have an EventSystem")]
