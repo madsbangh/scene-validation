@@ -28,6 +28,10 @@ namespace SceneValidation
 
 		void OnEnable()
 		{
+			if (sceneValidatorState == null)
+			{
+				SetupSceneValidator();
+			}
 			Undo.willFlushUndoRecord += Repaint;
 			EditorSceneManager.sceneOpened += OnSceneOpened;
 			AssemblyReloadEvents.afterAssemblyReload += OnAssemblyReloaded;
