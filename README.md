@@ -1,4 +1,4 @@
-# Scene validator UI for Unity3d
+# Extensible scene validator for Unity3D
 
 This editor extension adds a tool that validates your scenes.
 
